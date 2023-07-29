@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>EDM-Fest</title>
+
+    <style>
+      /* footer css styles..................................------------------------------- */
+
+    
+
+      .footerContainer {
+        width: 100%;
+        padding-top: 50px;
+
+        
+      }
+
+      .socialIcons {
+        display: flex;
+        justify-content: center;
+      }
+
+      .socialIcons a {
+        text-decoration: none;
+        padding: 10px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+      }
+
+      .socialIcons a i {
+        font-size: 2em;
+        color: black;
+        opacity: 0.9;
+      }
+
+      .socialIcons a:hover {
+        background-color: #111;
+        transition: 0.5s;
+      }
+
+      .socialIcons a:hover i {
+        color: white;
+        transition: 0.5s;
+      }
+
+      .footerBottom {
+        background-color: #000;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .footerBottom p {
+        color: white;
+      }
+
+      .designer {
+        opacity: 0.7;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin: 0px 5px;
+      }
+
+     
+
+      /* footer end here */
+
+      section {
+        padding: 60px 0;
+      }
+      #intro {
+        background: rgb(14, 14, 17);
+        background: linear-gradient(
+          90deg,
+          rgba(14, 14, 17, 1) 0%,
+          rgba(0, 0, 0, 1) 41%,
+          rgba(0, 113, 135, 1) 100%
+        );
+      }
+      hr {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar section  -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-lg">
+        <a href="#intro" class="navbar-brand">
+          <span class="fw-bold text-secondary"
+            ><i class="bi bi-disc"></i> EDM-Fest
+          </span>
+        </a>
+        <!-- toggle button for mobile nav -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- navbar links -->
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#topics" class="nav-link">About The Festivals</a>
+            </li>
+            <li class="nav-item">
+              <a href="#reviews" class="nav-link">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Get in Touch</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a href="#pricing" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item ms-2 d-none d-md-inline">
+              <a href="#pricing" class="btn btn-secondary">buy now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main image and intro text -->
+    <section id="intro">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-5 text-center text-md-start">
+            <h1>
+              <div class="display-1 text-light">Avicii</div>
+              <div class="display-6 text-muted">Electronic Music Producer</div>
+            </h1>
+            <p class="lead my-4 text-muted">
+              As one of the most popular DJs of the late-2000s EDM boom,
+              Grammy-nominated Swedish producer Avicii rose to the top of the
+              charts in multiple countries and toured the world with his
+              uplifting house anthems.
+            </p>
+            <a href="#pricing" class="btn btn-dark btn-lg">Buy Tickets Now</a>
+          </div>
+          <div class="col-md-5 text-center">
+            <img
+              src="assets/avicii1.png"
+              alt="avicii profile pic"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <hr class="mt-5" />
+          <div class="display-6 text-muted text-center my-2">
+            Artists Lineup
+          </div>
+          <div class="col-lg-3 col-sm-6 col-6 mt-4 text-center">
+            <img
+              src="assets/skrilex.png"
+              style="width: 100px"
+              alt=" profile pic"
+              class="img-fluid rounded-circle align-content-center"
+            />
+
+            <div class="text-center text-light">Skrillex</div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-6 mt-4 text-center">
+            <img
+              src="assets/chainsmokers.jpeg"
+              style="width: 100px"
+              alt=" profile pic"
+              class="img-fluid rounded-circle"
+            />
+            <div class="text-center text-light">Chainsmokers</div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-6 mt-4 text-center">
+            <img
+              src="assets/alan.jpeg"
+              style="width: 100px"
+              alt=" profile pic"
+              class="img-fluid rounded-circle"
+            />
+            <div class="text-center text-light">Alan Walker</div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-6 mt-4 text-center">
+            <img
+              src="assets/martin.jpeg"
+              style="width: 100px"
+              alt=" profile pic"
+              class="img-fluid rounded-circle"
+            />
+            <div class="text-center text-light">Martin Garrix</div>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </section>
+
+    <!-- pricing plans -->
+    <section id="pricing" class="bg-light">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Pricing Plans</h2>
+          <p class="lead text-muted">Choose a pricing plan to suit you.</p>
+        </div>
+
+        <div class="row my-5 align-items-center justify-content-center g-0">
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-0">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Day Pass</h4>
+                <p class="lead card-subtitle">
+                  access to EDM-Fest on Friday, Saturday
+                </p>
+                <p class="display-5 my-4 text-primary fw-bold">$231.50</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  A Day Pass gives you access to EDM-Fest on Friday, Saturday or
+                  Sunday.
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-lg mt-3"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-9 col-lg-4">
+            <div class="card border-primary border-2">
+              <div class="card-header text-center text-primary">
+                Most Popular
+              </div>
+              <div class="card-body text-center py-5">
+                <h4 class="card-title">Full Madness Pass</h4>
+                <p class="lead card-subtitle">
+                  access to EDM-Fest on Friday, Saturday and Sunday
+                </p>
+                <p class="display-5 my-4 text-primary fw-bold">$589.25</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  A Full Madness Pass gives you access to EDM-Fest + access to
+                  all Comfort Area's for 1 weekend.
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-lg mt-3"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-0">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Early bird</h4>
+                <p class="lead card-subtitle">
+                  access to EDM-Fest on Friday, Saturday
+                </p>
+                <p class="display-5 my-4 text-primary fw-bold">$152.40</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  A Early bird Pass gives you access to EDM-Fest on Friday,
+                  Saturday or Sunday.
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-lg mt-3"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- topics at a galance -->
+    <section id="topics">
+      <div class="container-md">
+        <div class="text-center">
+          <h2>Biggest EDM Festivals in the World (2023)</h2>
+          <p class="lead text-muted">
+            One of the most popular music genres on the planet is Electronic
+            Dance Music
+          </p>
+        </div>
+
+        <div class="row my-5 g-5 justify-content-around align-items-center">
+          <div class="col-12 col-lg-6">
+            <img src="assets/logo.png" alt="logo" class="img-fluid" />
+          </div>
+
+          <!-- accordion -->
+          <div class="col-lg-6">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    1. Tomorrowland
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>Location: Boom, Belgium.</strong> Tomorrowland is
+                    perhaps the largest and best-known techno festival in the
+                    world. The festival even consists of a camping festival and
+                    the actual festival. The camping festival takes place the
+                    night before the actual festival. In addition to its huge
+                    lineup, Tomorrowland is also known for the fireworks show at
+                    the end. Definitely something you don’t want to miss, put it
+                    on your bucket list!
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    2. Ultra Music Festival
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>Location: Miami, Florida, USA.</strong> Ultra Music
+                    Festival (UMF) is one of the largest Electronic music
+                    festivals in the United States. This three-day festival
+                    attracts electronic music lovers from all over America every
+                    year. In the meantime has Ultra spawned a larger series of
+                    international franchises under the blanket branding ”Ultra
+                    Worldwide”. Ultra now has festival venues worldwide, such as
+                    in Croatia, South Africa, Singapore, Mexico, Brazil, and
+                    many other places.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    3. Electric Daisy Carnival (EDC) – Las Vegas
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>Location: Las Vegas, Nevada, USA.</strong> Electric
+                    Daisy Carnival Las Vegas, also known as EDC Las Vegas, is an
+                    unmissable event for any electronic music fan! This annual
+                    three-day festival features an extraordinary lineup of
+                    world-renowned DJs and emerging (techno) talent. Every year,
+                    thousands of visitors from all over the world visit EDC Las
+                    Vegas. The stages are truly breathtaking, with mesmerizing
+                    designs and special effects that will leave you in awe.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    4. Untold Festival
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>Location: Cluj-Napoca, Romania.</strong> Untold
+                    Festival is one of the largest dance music festivals in
+                    Europe and attracts visitors from all over the world (120+
+                    countries). Untold Festival is also called the EDM paradise
+                    of Eastern Europe. The four-day festival is held every year
+                    in the Cluj Arena in Cluj-Napoca, Romania. There are no less
+                    than 6 stages where the biggest names in techno will
+                    perform.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    5. Mysteryland
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>Location: Haarlemmermeer, Netherlands.</strong> As a
+                    Dutch native, I know how popular techno music is here in the
+                    Netherlands. There are a lot of different techno festivals
+                    throughout the year in this country, including Mysterland.
+                    Mysteryland is known for its enchanting green atmosphere
+                    surrounded by forest, with multiple stages set in the
+                    stunning Floriade Park in the Netherlands.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review lists -->
+    <section id="reviews" class="bg-light">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2><i class="bi bi-stars"></i>Artists Reviews</h2>
+          <p class="lead">5 Best EDM Artists Of All Time</p>
+        </div>
+
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-8">
+            <div class="list-group-item py-3">
+              <div class="pb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h5 class="mb-1">1. Tiësto</h5>
+              <p class="mb-1">
+                Tiësto (born Tijs Michiel Verwest, January 17, 1969) is a Dutch
+                DJ and record producer of electronic dance music. Some of his
+                achievements include the 2000 remix of Delerium’s “Silence”
+                featuring Sarah McLachlan that made him gain mainstream
+                popularity among EDM fans.
+              </p>
+              <small>Review by EDM Rekords</small>
+            </div>
+
+            <div class="list-group-item py-3">
+              <div class="pb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <h5 class="mb-1">2. Avicii</h5>
+              <p class="mb-1">
+                Avicii (born Tim Bergling, 8 September 1989 – 20 April 2018),
+                was a Swedish DJ and record producer. At the age of 16, he began
+                posting his remixes on electronic music forums, which led to his
+                first record deal. He rose to prominence in 2011 with his single
+                “Levels“.
+              </p>
+              <small>Review by EDM Rekords</small>
+            </div>
+
+            <div class="list-group-item py-3">
+              <div class="pb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <h5 class="mb-1">3. Skrillex</h5>
+              <p class="mb-1">
+                Skrillex (born Sonny John Moore; January 15, 1988) is an
+                American DJ and music producer. He found club and mainstream
+                stardom beginning in 2008, when he swapped his gig as the
+                frontman in post-hardcore band From First to Last for the
+                dancefloor-oriented project Skrillex.
+              </p>
+              <small>Review by EDM Rekords</small>
+            </div>
+
+            <div class="list-group-item py-3">
+              <div class="pb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h5 class="mb-1">4. Swedish House Mafia</h5>
+              <p class="mb-1">
+                Swedish House Mafia is a Swedish house music supergroup
+                consisting of Axwell, Steve Angello and Sebastian Ingrosso. They
+                rose to prominence in the 2000s with their high-energy brand of
+                EDM and progressive house music.
+              </p>
+              <small>Review by EDM Rekords</small>
+            </div>
+
+            <div class="list-group-item py-3">
+              <div class="pb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <h5 class="mb-1">5. Dimitri Vegas & Like Mike</h5>
+              <p class="mb-1">
+                Dimitri Vegas (Dimitri Thivaios) and Like Mike (Michael
+                Thivaios) were born on 16 May 1982 and 3 December 1985 in
+                Belgium. They left Belgium in 1999 to play a European tour and
+                settled in Mallorca to establish their names on the European
+                dance circuit before moving to Halkidiki, Greece and then Ibiza
+                in 2003.
+              </p>
+              <small>Review by EDM Rekords</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact form -->
+    <section id="contact">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2><i class="bi bi-envelope-at"></i> Get in Touch</h2>
+          <p class="lead">
+            Question to ask? Fill out the form to contact me directly...
+          </p>
+        </div>
+
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-6">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Quection</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <div class="bg-light sp">
+      <div >
+        <!-- footer section begin here ------------------------------------------------------------------------------------------- -->
+
+        <footer>
+          <div class="footerContainer">
+            <div class="socialIcons">
+              <a
+                href="https://www.linkedin.com/in/gihan-sachith-82276a217/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Gihansachith92" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://twitter.com/gihan_sachith" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCVCa_2yuXC8kieHXez7Zb6Q"
+                target="_blank"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a
+                href="https://www.hackerrank.com/gihansachith92"
+                target="_blank"
+                ><i class="fa-brands fa-hackerrank"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footerBottom">
+            <p>
+              Copyright &copy;2023: Designed by
+              <span class="designer">Gihan Sachith</span>
+            </p>
+          </div>
+        </footer>
+
+        <!-- footer section end here ------------------------------------------------------------------------------------------- -->
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
